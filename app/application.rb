@@ -23,7 +23,8 @@ class Application
         resp.write "Your cart is empty"
       end
     elsif req.path.match(/add/)
-      
+      add_params = req.params["q"]
+      if @@items.include?(add_params)
     else
       resp.write "Path Not Found"
     end
