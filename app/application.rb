@@ -26,7 +26,7 @@ class Application
       add_params = req.params["q"]
       if @@items.include?(add_params)
         @@cart << add_params
-        resp.write ""
+        resp.write "added #{add_params}"
       end
     else
       resp.write "Path Not Found"
