@@ -20,7 +20,7 @@ class Application
           resp.write "#{item}\n"
         end
       else
-        
+        resp.write
       end
     else
       resp.write "Path Not Found"
