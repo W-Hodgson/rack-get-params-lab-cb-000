@@ -23,7 +23,7 @@ class Application
         resp.write "Your cart is empty"
       end
     elsif req.path.match(/add/)
-
+      
     else
       resp.write "Path Not Found"
     end
