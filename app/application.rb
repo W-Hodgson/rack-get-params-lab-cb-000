@@ -25,6 +25,8 @@ class Application
     elsif req.path.match(/add/)
       add_params = req.params["q"]
       if @@items.include?(add_params)
+
+      end
     else
       resp.write "Path Not Found"
     end
